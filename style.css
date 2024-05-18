@@ -16,15 +16,28 @@ a, btn {
     transition: all 300ms ease;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.btn_container {
+    background-color: darkgray;
+}
 
 /* Main section */
 main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    background-color: darkgray;
+    height: 95vh;
+    /* background-color: darkgray; */
 }
 
 .text_name, .text_sub {
@@ -41,12 +54,14 @@ h3 {
     font-weight: 300;
 }
 
+
 .profile_pic {
     height: 200px;
     border: solid 3px;
     border-radius: 100px;
-    background-color: white;
-    margin: 20px;
+    background-color: rgb(0, 204, 255);
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .main_container {
@@ -54,28 +69,48 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     gap: 10px;
-    height: 100vh;
+    
 }
 
 
 .links_container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     border: solid 3px;
     border-radius: 25px;
-    width: 500px;
+    width: 400px;
     padding: 20px;
     margin: 0 auto;
 }
 
 /* making gap for icon and leave text in the middle */
 .fa-solid, .fa-user-tie, .fa-solid, .fa-code, .fa-brands, .fa-youtube, .fa-solid, .fa-computer, .fa-solid, .fa-envelope {
-    margin-right: 50px;
+    width: 100px;
+    margin-right: 12%;
 }
 
-.text_p2 a {
+.text_p2, a {
     display: block;
     text-align: center;
+    width: 100px;
+}
+
+.second_container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+foot {
+    height: 5vh;
+}
+
+.text_footer {
+    text-align: center;
+    padding: 10px;
 }
