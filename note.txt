@@ -1,0 +1,6 @@
+link:
+    Portfolio
+    Projects
+    Vlogs
+    My Setup
+    Contact Me
