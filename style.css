@@ -1,0 +1,80 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* GENERAL UNIVERSAL */
+* {
+    box-sizing: 0;
+    margin: 0;
+}
+
+body {
+    font-family: poppin, sans-serif;
+}
+
+a, btn {
+    transition: all 300ms ease;
+}
+
+/* Header Section */
+nav, .nav_links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray;
+    height: 10vh;
+}
+
+.logo {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.nav_links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 24px;
+}
+
+/* Adjusting links style */
+a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a:hover {
+    color: grey;
+    /* text-decoration: underline;
+    text-underline-offset: 10px; */
+    text-decoration-color: grey;
+    
+}
+
+a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: grey;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
