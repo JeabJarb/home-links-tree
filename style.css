@@ -88,13 +88,14 @@ h3 {
 
 /* making gap for icon and leave text in the middle */
 .fa-solid, .fa-user-tie, .fa-solid, .fa-code, .fa-brands, .fa-youtube, .fa-solid, .fa-computer, .fa-solid, .fa-envelope {
-    width: 100px;
+    /* width: 100px; */
     margin-right: 12%;
 }
 
 .text_p2, a {
     display: block;
     text-align: center;
+    justify-content: center;
     width: 100px;
 }
 
